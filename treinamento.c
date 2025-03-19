@@ -29,8 +29,7 @@ int main() {
 
     float densidade_populacional;
     float pib_per_capita;
-int carta1;
-int carta2;
+    int carta1, carta2;
 
     // Entrada de dados carta 1
     printf("CARTA 1: \n");
@@ -77,6 +76,10 @@ int carta2;
     densidade_populacional = populacao / area;
     pib_per_capita = pib / populacao;
 
+ // Cálculos das métricas
+ carta->densidade_populacional = carta->populacao / carta->area;
+ carta->pib_per_capita = carta->pib / (float)carta->populacao;
+ carta->super_poder = carta->populacao + carta->area + carta->pib + carta->pontos_turisticos + carta->pib_per_capita + (1 / carta->densidade_populacional);
 
 
     // Saída de dados
