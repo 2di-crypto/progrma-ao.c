@@ -66,35 +66,56 @@ int main() {
     carta2.super_poder = carta2.populacao + carta2.area + carta2.pib + carta2.numerosdepontosturisticos + carta2.pib_per_capita + (1 / carta2.densidade_populacional);
 
     // Comparação dos atributos
-    printf("\nComparação dos Atributos:\n");
+    printf("\nComparação de Cartas:\n");
 
     // Comparar População
     printf("População: ");
-    printf("%d\n", carta1.populacao > carta2.populacao); // 1 se carta1 vence, 0 se carta2 vence
+    if (carta1.populacao > carta2.populacao)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar Área
     printf("Área: ");
-    printf("%d\n", carta1.area > carta2.area);
+    if (carta1.area > carta2.area)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar PIB
     printf("PIB: ");
-    printf("%d\n", carta1.pib > carta2.pib);
+    if (carta1.pib > carta2.pib)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar Número de Pontos Turísticos
-    printf("Número de Pontos Turísticos: ");
-    printf("%d\n", carta1.numerosdepontosturisticos > carta2.numerosdepontosturisticos);
+    printf("Pontos Turísticos: ");
+    if (carta1.numerosdepontosturisticos > carta2.numerosdepontosturisticos)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar Densidade Populacional (menor valor vence)
     printf("Densidade Populacional: ");
-    printf("%d\n", carta1.densidade_populacional < carta2.densidade_populacional);
+    if (carta1.densidade_populacional < carta2.densidade_populacional)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar PIB per Capita
     printf("PIB per Capita: ");
-    printf("%d\n", carta1.pib_per_capita > carta2.pib_per_capita);
+    if (carta1.pib_per_capita > carta2.pib_per_capita)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     // Comparar Super Poder
     printf("Super Poder: ");
-    printf("%d\n", carta1.super_poder > carta2.super_poder);
+    if (carta1.super_poder > carta2.super_poder)
+        printf("Carta 1 venceu (1)\n");
+    else
+        printf("Carta 2 venceu (0)\n");
 
     return 0;
 }
