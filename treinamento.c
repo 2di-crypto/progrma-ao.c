@@ -22,16 +22,18 @@ int main() {
 
     char codigo[6];
     char nome[50];
-    int populacao;
+   unsigned long int populacao;
     float area;
     float pib;
     int numerosdepontosturisticos;
 
     float densidade_populacional;
     float pib_per_capita;
+int carta1;
+int carta2;
 
-
-    // Entrada de dados
+    // Entrada de dados carta 1
+    printf("CARTA 1: \n");
     printf("Codigo da cidade (EX: A01,A02,B01,B02): \n");
     scanf("%s", codigo); 
 
@@ -39,7 +41,7 @@ int main() {
     scanf("%s", nome); 
 
     printf("Populacao (em milhares): \n");
-    scanf("%d", &populacao);
+    scanf("%lu", &populacao);
 
     printf("Area (em km²): \n");
     scanf("%f", &area);
@@ -49,6 +51,27 @@ int main() {
 
     printf("Numero de pontos turisticos: \n");
     scanf("%d", &numerosdepontosturisticos);
+
+    // entrada de dados carta 2
+    printf("CARTA 2: \n");
+    printf("Codigo da cidade (EX: A01,A02,B01,B02): \n");
+    scanf("%s", codigo); 
+
+    printf("Nome da cidade: \n");
+    scanf("%s", nome); 
+
+    printf("Populacao (em milhares): \n");
+    scanf("%lu", &populacao);
+
+    printf("Area (em km²): \n");
+    scanf("%f", &area);
+
+    printf("PIB (em milhoes de reais): \n");
+    scanf("%f", &pib);
+
+    printf("Numero de pontos turisticos: \n");
+    scanf("%d", &numerosdepontosturisticos);
+
 
     // operaçao divisao
     densidade_populacional = populacao / area;
