@@ -61,15 +61,15 @@ pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milh
         
             // Saída de dados
             printf("\n===== DADOS DA CIDADE =====\n");
-            printf("Estado: %s\n", estado);
-            printf("Codigo da cidade: %s\n", codigo);
-            printf("Nome da cidade: %s\n", nome);
-            printf("Populacao: %d habitantes\n", populacao);
-            printf("Area: %.2f km²\n", area); // Formatação com 2 casas decimais
-            printf("PIB: %.2f milhões de reais\n", pib); // Formatação com 2 casas decimais
-            printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos);
-            printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional);
-            printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita);
+            printf("Estado: %s\n", estado_carta1);
+            printf("Codigo da cidade: %s\n", codigo_carta1);
+            printf("Nome da cidade: %s\n", nome_carta1);
+            printf("Populacao: %d habitantes\n", populacao_carta1);
+            printf("Area: %.2f km²\n", area_carta1); // Formatação com 2 casas decimais
+            printf("PIB: %.2f milhões de reais\n", pib_carta1); // Formatação com 2 casas decimais
+            printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos_carta1);
+            printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional_carta1);
+            printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita_carta1);
             
             return 0;
         }        
