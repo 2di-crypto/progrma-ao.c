@@ -19,6 +19,7 @@ int main() {
 
 //estrutura das cartas
             printf("=======JOGO DE CARTA SUPER TRUNFO======: \n");
+            printf("=====CARTA 1=====: \n");
 // DADOS CARTA 1
             
         char estado_carta1[6];                // Variável para o estado (1 caractere)
