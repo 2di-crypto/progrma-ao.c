@@ -56,8 +56,8 @@ int main() {
             scanf("%d", &numerosdepontosturisticos_carta1);
         
             // Cálculos para densidade populacional e PIB per capita
-            densidade_populacional = (float)populacao / area; // Garantir que a divisão seja feita com float
-            pib_per_capita = pib / populacao; // PIB per capita em milhões de reais por habitante
+            densidade_populacional_carta1 = (float)populacao_carta1 / area_carta1; // Garantir que a divisão seja feita com float
+pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milhões de reais por habitante
         
             // Saída de dados
             printf("\n===== DADOS DA CIDADE =====\n");
