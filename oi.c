@@ -1,88 +1,123 @@
 #include <stdio.h>
 
-typedef struct {
-    char codigo[6];
-    char nome[50];
-    unsigned long int populacao;
-    float area;
-    float pib;
-    int numerosdepontosturisticos;
-    float densidade_populacional;
-    float pib_per_capita;
-} Cidade;
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das Cartas
 
 int main() {
-    Cidade carta1, carta2;
+    // Estrutura das cartas
+    printf("=======JOGO DE CARTA SUPER TRUNFO======: \n");
 
-    // Entrada de dados carta 1
-    printf("CARTA 1: \n");
+    char estado[6];                // Variável para o estado (1 caractere)
+    char codigo[6];                // Código da cidade
+    char nome[50];                 // Nome da cidade
+    int populacao;                 // População da cidade
+    float area;                    // Área da cidade (em km²)
+    float pib;                     // PIB da cidade (em milhões de reais)
+    int numerosdepontosturisticos; // Número de pontos turísticos
+   
+
+    // Variáveis para os cálculos
+    float densidade_populacional;  // Densidade populacional (hab/km²)
+    float pib_per_capita;          // PIB per capita (milhões de reais por habitante)
+
+    // Entrada de dados
+    printf(" CARTA1 \n");
+    printf("ESTADO (Exemplo: SP): \n");
+    scanf("%s", estado);
+    
     printf("Codigo da cidade (EX: A01,A02,B01,B02): \n");
-    scanf("%s", carta1.codigo); 
+    scanf("%s", codigo); 
 
     printf("Nome da cidade: \n");
-    scanf("%s", carta1.nome); 
+    scanf(" %49[^\n]", nome);  // Captura a linha inteira, permitindo espaços no nome
 
-    printf("Populacao (em milhares): \n");
-    scanf("%lu", &carta1.populacao);
-
-    printf("Area (em km²): \n");
-    scanf("%f", &carta1.area);
-
-    printf("PIB (em milhoes de reais): \n");
-    scanf("%f", &carta1.pib);
-
-    printf("Numero de pontos turisticos: \n");
-    scanf("%d", &carta1.numerosdepontosturisticos);
-
-    // Entrada de dados carta 2
-    printf("CARTA 2: \n");
-    printf("Codigo da cidade (EX: A01,A02,B01,B02): \n");
-    scanf("%s", carta2.codigo); 
-
-    printf("Nome da cidade: \n");
-    scanf("%s", carta2.nome); 
-
-    printf("Populacao (em milhares): \n");
-    scanf("%lu", &carta2.populacao);
+    printf("Populacao (em habitantes): \n");
+    scanf("%d", &populacao);
 
     printf("Area (em km²): \n");
-    scanf("%f", &carta2.area);
+    scanf("%f", &area);
 
-    printf("PIB (em milhoes de reais): \n");
-    scanf("%f", &carta2.pib);
+    printf("PIB (em milhões de reais): \n");
+    scanf("%f", &pib);
 
-    printf("Numero de pontos turisticos: \n");
-    scanf("%d", &carta2.numerosdepontosturisticos);
+    printf("Numero de pontos turísticos: \n");
+    scanf("%d", &numerosdepontosturisticos);
 
-    // Cálculos para carta 1
-    carta1.densidade_populacional = carta1.populacao / carta1.area;
-    carta1.pib_per_capita = carta1.pib / carta1.populacao;
+    // Cálculos para densidade populacional e PIB per capita
+    densidade_populacional = (float)populacao / area; // Garantir que a divisão seja feita com float
+    pib_per_capita = pib / populacao; // PIB per capita em milhões de reais por habitante
 
-    // Cálculos para carta 2
-    carta2.densidade_populacional = carta2.populacao / carta2.area;
-    carta2.pib_per_capita = carta2.pib / carta2.populacao;
-
-    // Saída de dados carta 1
-    printf("\nCARTA 1:\n");
-    printf("Codigo da cidade: %s \n", carta1.codigo);
-    printf("Nome da cidade: %s \n", carta1.nome);
-    printf("Populacao: %lu mil habitantes \n", carta1.populacao);
-    printf("Area: %.2f km² \n", carta1.area);
-    printf("PIB: %.2f milhoes de reais \n", carta1.pib);
-    printf("Numero de pontos turisticos: %d \n", carta1.numerosdepontosturisticos);
-    printf("Densidade populacional: %.2f habitantes/km²\n", carta1.densidade_populacional);
-    printf("PIB per capita: %.2f milhoes de reais\n", carta1.pib_per_capita);
-
-    // Saída de dados carta 2
-    printf("\nCARTA 2:\n");
-    printf("Codigo da cidade: %s \n", carta2.codigo);
-    printf("Nome da cidade: %s \n", carta2.nome);
-    printf("Populacao: %lu mil habitantes \n", carta2.populacao);
-    printf("Area: %.2f km² \n", carta2.area);
-    printf("PIB: %.2f milhoes de reais \n", carta2.pib);
-    printf("Numero de pontos turisticos: %d \n", carta2.numerosdepontosturisticos);
-    printf("Densidade populacional: %.2f habitantes/km²\n", carta2.densidade_populacional);
-    printf("PIB per capita: %.2f milhoes de reais\n", carta2.pib_per_capita);
+    // Saída de dados
+    printf("\n===== DADOS DA CIDADE =====\n");
+    printf("Estado: %s\n", estado);
+    printf("Codigo da cidade: %s\n", codigo);
+    printf("Nome da cidade: %s\n", nome);
+    printf("Populacao: %d habitantes\n", populacao);
+    printf("Area: %.2f km²\n", area); // Formatação com 2 casas decimais
+    printf("PIB: %.2f milhões de reais\n", pib); // Formatação com 2 casas decimais
+    printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos);
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional);
+    printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita);
 
     return 0;
 }
+
+int main() {
+    // Estrutura das cartas
+    printf("=======JOGO DE CARTA SUPER TRUNFO======: \n");
+
+    char estado[6];                // Variável para o estado (1 caractere)
+    char codigo[6];                // Código da cidade
+    char nome[50];                 // Nome da cidade
+    int populacao;                 // População da cidade
+    float area;                    // Área da cidade (em km²)
+    float pib;                     // PIB da cidade (em milhões de reais)
+    int numerosdepontosturisticos; // Número de pontos turísticos
+   
+
+    // Variáveis para os cálculos
+    float densidade_populacional;  // Densidade populacional (hab/km²)
+    float pib_per_capita;          // PIB per capita (milhões de reais por habitante)
+
+    // Entrada de dados
+    printf(" CARTA2 \n");
+    printf("ESTADO (Exemplo: SP): \n");
+    scanf("%s", estado);
+    
+    printf("Codigo da cidade (EX: A01,A02,B01,B02): \n");
+    scanf("%s", codigo); 
+
+    printf("Nome da cidade: \n");
+    scanf(" %49[^\n]", nome);  // Captura a linha inteira, permitindo espaços no nome
+
+    printf("Populacao (em habitantes): \n");
+    scanf("%d", &populacao);
+
+    printf("Area (em km²): \n");
+    scanf("%f", &area);
+
+    printf("PIB (em milhões de reais): \n");
+    scanf("%f", &pib);
+
+    printf("Numero de pontos turísticos: \n");
+    scanf("%d", &numerosdepontosturisticos);
+
+    // Cálculos para densidade populacional e PIB per capita
+    densidade_populacional = (float)populacao / area; // Garantir que a divisão seja feita com float
+    pib_per_capita = pib / populacao; // PIB per capita em milhões de reais por habitante
+
+    // Saída de dados
+    printf("\n===== DADOS DA CIDADE =====\n");
+    printf("Estado: %s\n", estado);
+    printf("Codigo da cidade: %s\n", codigo);
+    printf("Nome da cidade: %s\n", nome);
+    printf("Populacao: %d habitantes\n", populacao);
+    printf("Area: %.2f km²\n", area); // Formatação com 2 casas decimais
+    printf("PIB: %.2f milhões de reais\n", pib); // Formatação com 2 casas decimais
+    printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos);
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional);
+    printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita);
+
+    return 0;
+}
+
