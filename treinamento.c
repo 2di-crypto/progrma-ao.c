@@ -135,14 +135,16 @@ pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milh
 
             printf("\n");
 
-            //COMPARAÇÃO ENTRE AS CARTAS PARA DEFINIR O GANHADOR 
+            // COMPARAÇÃO ENTRE AS CARTAS PARA DEFINIR O GANHADOR 
+    if (populacao_carta1 > populacao_carta2) {
+        printf("CARTA 1 TEM A MAIOR POPULAÇÃO! \n");
+        printf("A CIDADE VENCEDORA É: %s\n", nome_carta1);
+    } else if (populacao_carta2 > populacao_carta1) {
+        printf("CARTA 2 TEM A MAIOR POPULAÇÃO! \n");
+        printf("A CIDADE VENCEDORA É: %s\n", nome_carta2);
+    } else {
+        printf("EMPATE! AMBAS AS CIDADES TÊM A MESMA POPULAÇÃO.\n");
+    }
 
-            if(populacao_carta1 > populacao_carta2){
-                printf("CARTA 1 TEM A MAIOR POPULAÇÃO! \n");
-            }else{
-                printf("CARTA 2 TEM A MAIOR POPULAÇÃO! \n");
-            }
-            
-            
-            return 0;
-        }        
+    return 0;
+}
