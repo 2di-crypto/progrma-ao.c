@@ -132,6 +132,16 @@ pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milh
             printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos_carta2);
             printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional_carta2);
             printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita_carta2);
+
+            printf("\n");
+
+            //COMPARAÇÃO ENTRE AS CARTAS PARA DEFINIR O GANHADOR 
+            
+            if(populacao_carta1 > populacao_carta2){
+                printf("CARTA 1 VENCEU!\n");
+            }else{
+                printf("CARTA 2 VENCEU!\n");
+            }
             
             return 0;
         }        
