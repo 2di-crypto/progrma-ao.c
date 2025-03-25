@@ -141,5 +141,17 @@ pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milh
             printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional_carta1);
             printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita_carta1);
             
+            // Saída de dados carta2
+            printf("\n===== DADOS DA CIDADE =====\n");
+            printf("Estado: %s\n", estado_carta2);
+            printf("Codigo da cidade: %s\n", codigo_carta2);
+            printf("Nome da cidade: %s\n", nome_carta2);
+            printf("Populacao: %d habitantes\n", populacao_carta2);
+            printf("Area: %.2f km²\n", area_carta2); // Formatação com 2 casas decimais
+            printf("PIB: %.2f milhões de reais\n", pib_carta2); // Formatação com 2 casas decimais
+            printf("Número de pontos turísticos: %d\n", numerosdepontosturisticos_carta2);
+            printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional_carta2);
+            printf("PIB per capita: %.2f milhões de reais\n", pib_per_capita_carta2);
+            
             return 0;
         }        
