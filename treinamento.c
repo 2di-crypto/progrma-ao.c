@@ -136,12 +136,13 @@ pib_per_capita_carta1 = pib_carta1 / populacao_carta1; // PIB per capita em milh
             printf("\n");
 
             //COMPARAÇÃO ENTRE AS CARTAS PARA DEFINIR O GANHADOR 
-            
+
             if(populacao_carta1 > populacao_carta2){
-                printf("CARTA 1 VENCEU!\n");
+                printf("CARTA 1 TEM A MAIOR POPULAÇÃO! \n");
             }else{
-                printf("CARTA 2 VENCEU!\n");
+                printf("CARTA 2 TEM A MAIOR POPULAÇÃO! \n");
             }
+            
             
             return 0;
         }        
