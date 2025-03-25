@@ -3,3 +3,4 @@ if(pib1 > pib2){
 }else{
     printef("CARTA 2 VENCEU!\n");
 }
+
