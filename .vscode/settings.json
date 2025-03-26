@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "EFEELESE.C": "cpp"
+        "EFEELESE.C": "cpp",
+        "LOGICOS.C": "cpp"
     }
 }
