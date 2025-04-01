@@ -21,7 +21,7 @@ int main() {
 //estrutura das cartas
             printf("=======JOGO DE CARTA SUPER TRUNFO====== \n");
 
-    
+            
 // DADOS CARTA 1
             
         char estado_carta1[6];                // Variável para o estado (1 caractere)
@@ -51,6 +51,31 @@ int main() {
            // Variáveis para os cálculos
            float densidade_populacional_carta2; // Densidade populacional (hab/km²)
            float pib_per_capita_carta2 ;          // PIB per capita (milhões de reais por habitante)
+        
+        //MENU INTERATIVO
+           int opcao;
+           do {
+               printf("Menu:\n");
+               printf("1. Opção 1\n");
+               printf("2. Opção 2\n");
+               printf("3. Sair\n");
+               printf("Escolha uma opção: \n");
+               scanf("%d", &opcao);
+       
+               switch(opcao) {
+                   case 1:
+                       printf("Você escolheu a opção 1\n");
+                       break;
+                   case 2:
+                       printf("Você escolheu a opção 2\n");
+                       break;
+                   case 3:
+                       printf("Saindo...\n");
+                       break;
+                   default:
+                       printf("Opção inválida!\n");
+               }
+           } while (opcao != 3);
 
             // Entrada de dados carta1
             printf("=====CARTA 1===== \n");
