@@ -64,7 +64,7 @@ int main() {
        
                switch(opcao) {
                    case 1:
-                       printf("VAMOS JOGAR\n");
+                       printf("***VAMOS JOGAR***\n");
                        break;
                    case 2:
                        printf("Você escolheu a opção 2\n");
@@ -76,6 +76,7 @@ int main() {
                        printf("Opção inválida!\n");
                }
            
+               printf("\n");
 
             // Entrada de dados carta1
             printf("=====CARTA 1===== \n");
