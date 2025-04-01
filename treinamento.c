@@ -56,7 +56,7 @@ int main() {
            int opcao;
            do {
                printf("Menu:\n");
-               printf("1. Opção 1\n");
+               printf("1. COMECE O JOGO\n");
                printf("2. Opção 2\n");
                printf("3. Sair\n");
                printf("Escolha uma opção: \n");
@@ -64,7 +64,7 @@ int main() {
        
                switch(opcao) {
                    case 1:
-                       printf("Você escolheu a opção 1\n");
+                       printf("VAMOS JOGAR\n");
                        break;
                    case 2:
                        printf("Você escolheu a opção 2\n");
@@ -75,7 +75,7 @@ int main() {
                    default:
                        printf("Opção inválida!\n");
                }
-           } while (opcao != 3);
+           } while (opcao != 1);
 
             // Entrada de dados carta1
             printf("=====CARTA 1===== \n");
