@@ -54,7 +54,7 @@ int main() {
         
         //MENU INTERATIVO
            int opcao;
-           do {
+        
                printf("Menu:\n");
                printf("1. COMECE O JOGO\n");
                printf("2. Opção 2\n");
@@ -75,7 +75,7 @@ int main() {
                    default:
                        printf("Opção inválida!\n");
                }
-           } while (opcao != 1);
+           
 
             // Entrada de dados carta1
             printf("=====CARTA 1===== \n");
